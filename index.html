@@ -1222,6 +1222,19 @@ Ideal Property</div>
 <div class="toast" id="toast"></div>
 
 <script>
+import { Resend } from 'resend';
+
+const resend = new Resend('re_4NzxgxLv_nT8gnxWX4Xw5xQJw72tzeZtN');
+
+resend.emails.send({
+  from: 'onboarding@resend.dev',
+  to: 'hey.elaguilar@gmail.com',
+  subject: 'Hello World',
+  html: '<p>Congrats on sending your <strong>first email</strong>!</p>'
+});
+
+
+
 // ── CONFIG ────────────────────────────────────────────
 const PHONE = '639778290053';
 const EMAIL = 'rebfrancergonzales@gmail.com';
